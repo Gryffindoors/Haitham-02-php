@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,9 +29,7 @@
 
 </head>
 
-<?php
-    session_start();
-    ?>
+
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary d-flex items-center justify-content-between px-3">
@@ -60,7 +61,7 @@
             </div>
         </div>
     </nav>
-    
+
     <section class="header-section w-100 d-flex align-items-center">
         <div class="container">
             <div class="w-75-sm w-50">

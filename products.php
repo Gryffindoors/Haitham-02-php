@@ -41,7 +41,7 @@ $products = [
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
+<?PHP session_start() ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,7 +69,12 @@ $products = [
                         <a class="nav-link" href="./products.php">All Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./account.php">Account</a>
+                        <?php
+                        if (isset($_SESSION['username'])) { ?>
+                            <a class="nav-link" href="./account.php"><?= $_SESSION['username'] ?></a>
+                        <?php } else { ?>
+                            <a class="nav-link" href="./account.php">Account</a>
+                        <?php } ?>
                     </li>
 
             </div>

@@ -96,7 +96,7 @@ if (!empty($error)){
     $_SESSION["password"] = $password;
     header("Location: http://localhost/02_php_task/task/products.php");
     $_SESSION["error"] = [];
-    $_SESSION["edit"] = [];
+    $_SESSION["edit"] = $edit;
 }
 
     
