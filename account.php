@@ -51,7 +51,7 @@ $error = $_SESSION['error'] ?? [];
     <?php if (isset($_SESSION["username"])) { ?>
         <section class="container text-bg-secondary my-5 py-3">
 
-            <a href="./actions/logout.php" class="btn btn-danger">Sign Out</a>
+            <a href="http://localhost/02_php_task/task/actions/logout.php" class="btn btn-danger">Sign Out</a>
         <?php } ?>
 
         <section class="container text-bg-secondary my-5 py-3">
